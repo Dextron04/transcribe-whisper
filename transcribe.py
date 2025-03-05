@@ -27,7 +27,7 @@ def upload_and_transcribe():
 
     try:
         # Transcription process (using Whisper as an example)
-        model = whisper.load_model("tiny")
+        model = whisper.load_model("tiny.en")
         result = model.transcribe(file_path)
         transcript_text = result['text']
 
